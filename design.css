@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: darkgrey;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+div.botoes {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    z-index: 999;
+}
+
+div.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    width: 6vh;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 2vw;
+
+}
+
+div.dados {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    z-index: 999;
+}
+
+div.menu {
+    position: fixed;
+    right: 10vw;
+    bottom: 10px;
+    z-index: 999;
+}
+
+div.voltar {
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    z-index: 999;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+i.fa-forward {
+    display: none;
+}
+
+
+
+header {
+    background-color: grey;
+    height: 15vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-items: center;
+    padding: 2px;
+    border-bottom: 1px solid black;
+}
+
+div.perfil {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div.foto_personagem {
+    background-color: black;
+    width: 80%;
+    height: 80%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+p.leveldisplay {
+    font-size: 2vh;
+}
+
+
+div.barras {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "vida energia alma";
+    align-items: center;
+    justify-items: center;
+}
+
+div.hp {
+    width: 90%;
+    height: 60%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: vida;
+}
+
+p.hplabel {
+    font-size: 2vh;
+    margin-top: 0.8vh;
+}
+
+div.hpbarra {
+    display: flex;
+    font-size: 4vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    height: 60%;
+    gap: 5px;
+}
+
+div.pe {
+    width: 90%;
+    height: 60%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: energia;
+}
+
+p.pelabel {
+    font-size: 2vh;
+    margin-top: 0.8vh;
+}
+
+div.pebarra {
+    display: flex;
+    font-size: 4vh;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    gap: 5px;
+}
+
+div.alma {
+    width: 90%;
+    height: 60%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    text-align: center;
+    grid-area: alma;
+}
+
+p.almalabel {
+    font-size: 2vh;
+    margin-top: 0.8vh;
+}
+
+div.almabarra {
+    display: flex;
+    font-size: 4vh;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    gap: 5px;
+}
+
+
+
+div.header2 {
+    background-color: grey;
+    height: 10vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 2px;
+    border-bottom: 1px solid black;
+}
+
+div.maestria {
+    height: 80%;
+    width: 80%;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 0.8vh;
+}
+
+p.maestriabonus {
+    font-size: 4vh;
+    margin-top: 0.5vh;
+}
+
+div.movimento {
+    height: 80%;
+    width: 80%;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 0.8vh;
+}
+
+p.deslocamento {
+    font-size: 4vh;
+    margin-top: 0.5vh;
+}
+
+div.iniciativa {
+    height: 80%;
+    width: 80%;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 0.8vh;
+}
+
+p.iniciativabonus {
+    font-size: 4vh;
+    margin-top: 0.5vh;
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+div.carmadura {
+    height: 80%;
+    width: 80%;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 0.8vh;
+}
+
+p.ca {
+    font-size: 4vh;
+    margin-top: 0.5vh;
+}
+
+div.derivados {
+    height: 80%;
+    width: 80%;
+    font-size: 2vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+div.resistencias {
+    height: 80%;
+    width: 100%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+div.inspiracao {
+    height: 80%;
+    width: 100%;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+div.atributostitle {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: large;
+}
+
+div.atributos {
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+div.caixaatributo {
+    height: 90%;
+    width: 60%;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p.atributolabel {
+    font-size: 2vh;
+    margin-top: 0.5vh;
+}
+
+p.atributomod {
+    padding: 1vh;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+p.valoratributolabel {
+    font-size: 2vh;
+    margin-bottom: 0.5vh;
+}
+
+
+
+div.resistenciastitle {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: large;
+}
+
+div.periciasresistencias {
+    height: 25vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+div.caixaresistencia {
+    height: 90%;
+    width: 60%;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p.resistencialabel {
+    font-size: 2.5vh;
+    margin-top: 0.5vh;
+}
+
+p.resistenciabonus {
+    padding: 1vh;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+
+div.sentidostitle {
+    text-align: center;
+    margin-top: 2vh;
+    font-size: large;
+}
+
+div.caixasentidos {
+    height: 8vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+div.sentido {
+    border: 2px solid yellow;
+    border-radius: 8px;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p.passivalabel {
+    font-size: 1.5vh;
+    margin-top: 0.5vh;
+    text-align: center;
+}
+
+p.passivavalor {
+    font-size: 3vh;
+    text-align: center;
+}
+
+div.sentidosextras {
+    padding: 2vh;
+    text-align: center;
+    align-self: center;
+}
+
+
+div.abas {
+    display: none;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    width: 85%;
+    right: 0px;
+    top: 0px;
+    z-index: 998;
+    border-left: 1px solid black;
+}

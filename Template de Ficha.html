@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de Ficha</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="scrollbar.css">
+</head>
+<body>
+    <main>
+        <div class="dados botao"><i class="fa-solid fa-dice-d20" style="color: #ffffff;"></i></div>
+        <div class="menu botao"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+        <div class="voltar botao">
+            <i class="fa-solid fa-backward" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-forward" style="color: #ffffff;"></i>
+        </div>
+        <header>
+            <div class="perfil">
+                <div class="foto_personagem"></div>
+                <p class="leveldisplay">Nível 0</p>
+            </div>
+            <div class="barras">
+                <div class="hp">
+                    <p class="hplabel">Pontos de Vida</p>
+                    <div class="hpbarra">
+                        <p class="hpatual">100</p>
+                        <p>/</p>
+                        <p class="hpmax">100</p>
+                    </div>
+                </div>
+                <div class="pe">
+                    <p class="pelabel">Pontos de Energia</p>
+                    <div class="pebarra">
+                        <p class="peatual">100</p>
+                        <p>/</p>
+                        <p class="pemax">100</p>
+                    </div>
+                </div>
+                <div class="alma">
+                    <p class="almalabel">Pontos de Alma</p>
+                    <div class="almabarra">
+                        <p class="almaatual">100</p>
+                        <p>/</p>
+                        <p class="almamax">100</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header2">
+            <div class="maestria">
+                <p>Maestria</p>
+                <p class="maestriabonus">+2</p>
+            </div>
+            <div class="movimento">
+                <p>Movimento</p>
+                <p class="deslocamento">9m</p>
+            </div>
+            <div class="iniciativa">
+                <p id="iniciativa">Iniciativa</p>
+                <p class="iniciativabonus">+0</p>
+            </div>
+            <div class="carmadura">
+                <p>CA</p>
+                <p class="ca">10</p>
+            </div>
+            <div class="derivados">
+                <div class="resistencias"><p>Resistência</p></div>
+                <div class="inspiracao"><p>Inspiração</p></div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="atributostitle"><p>Atributos</p></div>
+        <div class="atributos">
+            <div class="caixaatributo">
+                <p class="atributolabel descricaofor">Força</p>
+                <p class="atributomod">+0</p>
+                <p class="valoratributolabel">10</p>
+            </div>
+            <div class="caixaatributo">
+                <p class="atributolabel descricaodes">Destreza</p>
+                <p class="atributomod">+0</p>
+                <p class="valoratributolabel">10</p>
+            </div>
+            <div class="caixaatributo">
+                <p class="atributolabel descricaocon">Constituição</p>
+                <p class="atributomod">+0</p>
+                <p class="valoratributolabel">10</p>
+            </div>
+            <div class="caixaatributo">
+                <p class="atributolabel descricaoint">Inteligência</p>
+                <p class="atributomod">+0</p>
+                <p class="valoratributolabel">10</p>
+            </div>
+            <div class="caixaatributo">
+                <p class="atributolabel descricaosab">Sabedoria</p>
+                <p class="atributomod">+0</p>
+                <p class="valoratributolabel">10</p>
+            </div>
+            <div class="caixaatributo">
+                <p class="atributolabel descricaocar">Carisma</p>
+                <p class="atributomod">+0</p>
+                <p class="valoratributolabel">10</p>
+            </div>
+        </div>
+        <div class="resistenciastitle"><p>Resistências</p></div>
+        <div class="periciasresistencias">
+            <div class="caixaresistencia">
+                <p class="resistencialabel descricaofortitude">Fortitude</p>
+                <p class="resistenciabonus">+0</p>
+            </div>
+            <div class="caixaresistencia">
+                <p class="resistencialabel descricaoreflexo">Reflexo</p>
+                <p class="resistenciabonus">+0</p>
+            </div>
+            <div class="caixaresistencia">
+                <p class="resistencialabel descricaoastucia">Astúcia</p>
+                <p class="resistenciabonus">+0</p>
+            </div>
+            <div class="caixaresistencia">
+                <p class="resistencialabel descricaovontade">Vontade</p>
+                <p class="resistenciabonus">+0</p>
+            </div>
+        </div>
+        <div class="sentidostitle"><p>Sentidos</p></div>
+        <div class="caixasentidos">
+            <div class="sentido atencao descricaopassivaatencao">
+                <p class="passivalabel">Atenção Passiva</p>
+                <p class="passivavalor">10</p>
+            </div>
+            <div class="sentido investicagao descricaopassivainvestigacao">
+                <p class="passivalabel">Investigação Passiva</p>
+                <p class="passivavalor">10</p>
+            </div>
+            <div class="sentido intuicao descricaopassivaintuicao">
+                <p class="passivalabel">Intuição Passiva</p>
+                <p class="passivavalor">10</p>
+            </div>
+        </div>
+        <div class="sentidosextras descricaosentidosextras">Visão Noturna 9m</div>
+        
+        
+        
+        
+        <div class="abasdedescricao">
+            <div class="abas abaperfil">
+                <p>Descrição do Personagem</p>
+            </div>
+            <div class="abas abavida">
+                <p>Administração de Vida</p>
+            </div>
+            <div class="abas abape">
+                <p>Administração de PE</p>
+            </div>
+            <div class="abas abaalma">
+                <p>Administração de Alma</p>
+            </div>
+            <div class="abas abamaestria">
+                <p>Descrição de Maestria</p>
+            </div>
+            <div class="abas abamovimento">
+                <p>Administração de Movimento</p>
+            </div>
+            <div class="abas abainiciativa">
+                <p>Descrição de Iniciativa</p>
+            </div>
+            <div class="abas abaca">
+                <p>Descrição da CA</p>
+            </div>
+            <div class="abas abaresistencias">
+                <p>Descrição de Resistências</p>
+            </div>
+            <div class="abas abafor">
+                <p>Descrição de Força</p>
+            </div>
+            <div class="abas abades">
+                <p>Descrição de Destreza</p>
+            </div>
+            <div class="abas abacon">
+                <p>Descrição de Constituição</p>
+            </div>
+            <div class="abas abaint">
+                <p>Descrição de Inteligência</p>
+            </div>
+            <div class="abas abasab">
+                <p>Descrição de Sabedoria</p>
+            </div>
+            <div class="abas abacar">
+                <p>Descrição de Carisma</p>
+            </div>
+            <div class="abas abafortitude">
+                <p>Descrição de Fortitude</p>
+            </div>
+            <div class="abas abareflexo">
+                <p>Descrição de Reflexo</p>
+            </div>
+            <div class="abas abaastucia">
+                <p>Descrição de Astúcia</p>
+            </div>
+            <div class="abas abavontade">
+                <p>Descrição de Vontade</p>
+            </div>
+            <div class="abas abapassivaatencao">
+                <p>Descrição de Atenção Passiva</p>
+            </div>
+            <div class="abas abapassivainvestigacao">
+                <p>Descrição de Investigação Passiva</p>
+            </div>
+            <div class="abas abapassivaintuicao">
+                <p>Descrição de Intuição Passiva</p>
+            </div>
+            <div class="abas abasentidosextras">
+                <p>Descrição de Sentidos Extras</p>
+            </div>
+        </div>
+    </main>
+    
+    
+    <script src="https://kit.fontawesome.com/5be08ecbc6.js" crossorigin="anonymous"></script>
+    <script src="scripts/abas.js"></script>
+
+</body>
+</html>
