@@ -69,7 +69,6 @@ i.fa-forward {
 header {
     background-color: grey;
     height: 15vh;
-    max-width: 100vw;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 4fr;
@@ -80,14 +79,14 @@ header {
 }
 
 div.perfil {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     gap: 1vh;
-    margin-top: 2vh;
+    margin-top: 1vh;
     
 }
 
@@ -105,8 +104,8 @@ p.leveldisplay {
 
 
 div.barras {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -126,13 +125,13 @@ div.hp {
 }
 
 p.hplabel {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-top: 0.8vh;
 }
 
 div.hpbarra {
     display: flex;
-    font-size: 3vw;
+    font-size: 4vw;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
@@ -150,13 +149,13 @@ div.pe {
 }
 
 p.pelabel {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-top: 0.8vh;
 }
 
 div.pebarra {
     display: flex;
-    font-size: 3vw;
+    font-size: 4vw;
     align-items: center;
     justify-content: center;
     height: 60%;
@@ -173,13 +172,13 @@ div.alma {
 }
 
 p.almalabel {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-top: 0.8vh;
 }
 
 div.almabarra {
     display: flex;
-    font-size: 3vw;
+    font-size: 4vw;
     align-items: center;
     justify-content: center;
     height: 60%;
@@ -281,7 +280,7 @@ div.resistencias {
 div.inspiracao {
     height: 80%;
     width: 100%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     border: 2px solid yellow;
     border-radius: 5px;
     display: flex;
