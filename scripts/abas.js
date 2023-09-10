@@ -84,12 +84,42 @@ const abasentidosextras = document.querySelector('.abasentidosextras');
 
 
 
+const abamaioratributos = document.querySelector('.abamaioratributos');
+const abamaioracoes = document.querySelector('.abamaioracoes');
+const abamaiorpericias = document.querySelector('.abamaiorpericias');
+const abamaiorclasse = document.querySelector('.abamaiorclasse')
+const abamaioramaldicoadas = document.querySelector('.abamaioramaldicoadas');
+const abamaiorhabtec = document.querySelector('.abamaiorhabtec');
+const abamaiorinventario = document.querySelector('.abamaiorinventario');
+const abamaiormaestrias = document.querySelector('.abamaiormaestrias');
+const abamaiordescricao = document.querySelector('.abamaiordescricao');
+const abamaiornotas = document.querySelector('.abamaiornotas');
+
+const botaoabaatributos = document.querySelector('.aba1');
+const botaoabaacoes = document.querySelector('.aba2');
+const botaoabapericias = document.querySelector('.aba3');
+const botaoabaclasse = document.querySelector('.aba4');
+const botaoabaamaldicoadas = document.querySelector('.aba5');
+const botaoabahabtec = document.querySelector('.aba6');
+const botaoabainventario = document.querySelector('.aba7');
+const botaoabamaestrias = document.querySelector('.aba8');
+const botaoabadescricao = document.querySelector('.aba9');
+const botaoabanotas = document.querySelector('.aba10');
+
+
+
+
+
+
+
+
 const botaovoltar = document.querySelector('.voltar');
 const botaovoltar1 = document.querySelector('.fa-forward')
 const botaovoltar2 = document.querySelector('.fa-backward')
 const botaomenu = document.querySelector('.menu');
 
-
+const abamenu = document.querySelector('.abamenu')
+let isabamenuopen = true;
 
 
 function fecharAba() {
@@ -198,3 +228,63 @@ descricaopassivaintuicao.addEventListener('click', function() {
 descricaosentidosextras.addEventListener('click', function() {
     abrirAba(abasentidosextras);
 });
+
+botaomenu.addEventListener('click', function() {
+    if (isabamenuopen) {
+        abamenu.style.display = 'none';   
+    } else {
+        abamenu.style.display = 'block';
+    }
+    isabamenuopen = !isabamenuopen;
+})
+
+
+
+function fecharAbasmaiores(abamaior) {
+    abamenu.style.display = 'none';
+    isabamenuopen = !isabamenuopen;
+    abamaioratributos.style.display = 'none';
+    abamaioracoes.style.display = 'none';
+    abamaiorpericias.style.display = 'none';
+    abamaiorclasse.style.display = 'none';
+    abamaioramaldicoadas.style.display = 'none';
+    abamaiorhabtec.style.display = 'none';
+    abamaiorinventario.style.display = 'none';
+    abamaiormaestrias.style.display = 'none';
+    abamaiordescricao.style.display = 'none';
+    abamaiornotas.style.display = 'none';
+    abamaior.style.display = 'block';
+}
+
+fecharAbasmaiores(abamaioratributos);
+
+botaoabaatributos.addEventListener('click', function() {
+    fecharAbasmaiores(abamaioratributos);
+})
+botaoabaacoes.addEventListener('click', function() {
+    fecharAbasmaiores(abamaioracoes);
+})
+botaoabapericias.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiorpericias);
+})
+botaoabaclasse.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiorclasse);
+})
+botaoabaamaldicoadas.addEventListener('click', function() {
+    fecharAbasmaiores(abamaioramaldicoadas);
+})
+botaoabahabtec.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiorhabtec);
+})
+botaoabainventario.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiorinventario);
+})
+botaoabamaestrias.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiormaestrias);
+})
+botaoabadescricao.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiordescricao);
+})
+botaoabanotas.addEventListener('click', function() {
+    fecharAbasmaiores(abamaiornotas);
+})

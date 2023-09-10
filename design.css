@@ -79,15 +79,14 @@ header {
 }
 
 div.perfil {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     gap: 1vh;
     margin-top: 1vh;
-    
 }
 
 div.foto_personagem {
@@ -290,6 +289,9 @@ div.inspiracao {
 
 
 
+
+
+
 div.atributostitle {
     text-align: center;
     margin-top: 2vh;
@@ -432,6 +434,11 @@ div.sentidosextras {
 }
 
 
+
+
+
+
+
 div.abas {
     display: none;
     background-color: white;
@@ -442,4 +449,38 @@ div.abas {
     top: 0px;
     z-index: 998;
     border-left: 1px solid black;
+}
+
+div.abamenu {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 100%;
+    width: 100%;
+}
+
+div.indicedeabas {
+    position: fixed;
+    bottom: 15%;
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div.indicedeabas > div {
+    background-color: grey;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
