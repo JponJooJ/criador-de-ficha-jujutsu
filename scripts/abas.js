@@ -1,3 +1,4 @@
+// CONSTANTES DO HEADER //
 var ultimaaba;
 
 const perfil = document.querySelector('.perfil');
@@ -29,11 +30,22 @@ const abaca = document.querySelector('.abaca');
 const resistencias = document.querySelector('.resistencias');
 const abaresistencias = document.querySelector('.abaresistencias');
 
+
 const inspiracao = document.querySelector('.inspiracao');
 let isBackgroundYellow = false;
 
+function ganharinspiracao() {
+    if (isBackgroundYellow) {
+        inspiracao.style.backgroundColor = 'yellow';
+    } else {
+        inspiracao.style.backgroundColor = 'transparent'
+    }
+    isBackgroundYellow = !isBackgroundYellow;
+}
 
 
+
+// CONSTANTES DA AbaMaiorATRIBUTOS //
 const descricaofor = document.querySelector('.descricaofor');
 const abafor = document.querySelector('.abafor');
 
@@ -53,7 +65,6 @@ const descricaocar = document.querySelector('.descricaocar');
 const abacar = document.querySelector('.abacar');
 
 
-
 const descricaofortitude = document.querySelector('.descricaofortitude');
 const abafortitude = document.querySelector('.abafortitude');
 
@@ -65,7 +76,6 @@ const abaastucia = document.querySelector('.abaastucia');
 
 const descricaovontade = document.querySelector('.descricaovontade');
 const abavontade = document.querySelector('.abavontade');
-
 
 
 const descricaopassivaatencao = document.querySelector('.descricaopassivaatencao');
@@ -84,6 +94,7 @@ const abasentidosextras = document.querySelector('.abasentidosextras');
 
 
 
+// CONSTANTES DO MENU-AbaMaiores //
 const abamaioratributos = document.querySelector('.abamaioratributos');
 const abamaioracoes = document.querySelector('.abamaioracoes');
 const abamaiorpericias = document.querySelector('.abamaiorpericias');
@@ -91,7 +102,7 @@ const abamaiorclasse = document.querySelector('.abamaiorclasse')
 const abamaioramaldicoadas = document.querySelector('.abamaioramaldicoadas');
 const abamaiorhabtec = document.querySelector('.abamaiorhabtec');
 const abamaiorinventario = document.querySelector('.abamaiorinventario');
-const abamaiormaestrias = document.querySelector('.abamaiormaestrias');
+const abamaiorshikigamis = document.querySelector('.abamaiorshikigamis');
 const abamaiordescricao = document.querySelector('.abamaiordescricao');
 const abamaiornotas = document.querySelector('.abamaiornotas');
 
@@ -112,16 +123,19 @@ const botaoabanotas = document.querySelector('.aba10');
 
 
 
-
+// CONSTANTES DOS BOTÕES //
 const botaovoltar = document.querySelector('.voltar');
 const botaovoltar1 = document.querySelector('.fa-forward')
 const botaovoltar2 = document.querySelector('.fa-backward')
 const botaomenu = document.querySelector('.menu');
 
-const abamenu = document.querySelector('.abamenu')
+const abamenu = document.querySelector('.abamenu');
 let isabamenuopen = true;
 
 
+
+
+// FUNÇÕES DOS BOTÕES //
 function fecharAba() {
     if (ultimaaba) {
         ultimaaba.style.display = 'none';
@@ -139,18 +153,13 @@ function abrirAba(aba) {
     botaovoltar2.style.display = 'none';
 }
 
-function ganharinspiracao() {
-    if (isBackgroundYellow) {
-        inspiracao.style.backgroundColor = 'yellow';
-    } else {
-        inspiracao.style.backgroundColor = 'transparent'
-    }
-    isBackgroundYellow = !isBackgroundYellow;
-}
 
 
+// EVENTO DO BOTÃO VOLTAR //
 botaovoltar.addEventListener('click', fecharAba);
 
+
+// EVENTO DAS DESCRIÇÕES DO HEADER //
 perfil.addEventListener('click', function() {
     abrirAba(abaperfil);
 });
@@ -182,6 +191,8 @@ resistencias.addEventListener('click', function() {
 inspiracao.addEventListener('click', ganharinspiracao)
 
 
+
+// EVENTOS DAS DESCRIÇÕES DA AbaMaiorATRIBUTOS //
 descricaofor.addEventListener('click', function() {
     abrirAba(abafor);
 });
@@ -229,6 +240,10 @@ descricaosentidosextras.addEventListener('click', function() {
     abrirAba(abasentidosextras);
 });
 
+
+
+
+// FUNÇÃO DO Botão MENU //
 botaomenu.addEventListener('click', function() {
     if (isabamenuopen) {
         abamenu.style.display = 'none';   
@@ -240,6 +255,7 @@ botaomenu.addEventListener('click', function() {
 
 
 
+// Função e Eventos das AbasMaiores //
 function fecharAbasmaiores(abamaior) {
     abamenu.style.display = 'none';
     isabamenuopen = !isabamenuopen;
@@ -250,7 +266,7 @@ function fecharAbasmaiores(abamaior) {
     abamaioramaldicoadas.style.display = 'none';
     abamaiorhabtec.style.display = 'none';
     abamaiorinventario.style.display = 'none';
-    abamaiormaestrias.style.display = 'none';
+    abamaiorshikigamis.style.display = 'none';
     abamaiordescricao.style.display = 'none';
     abamaiornotas.style.display = 'none';
     abamaior.style.display = 'block';
@@ -280,7 +296,7 @@ botaoabainventario.addEventListener('click', function() {
     fecharAbasmaiores(abamaiorinventario);
 })
 botaoabamaestrias.addEventListener('click', function() {
-    fecharAbasmaiores(abamaiormaestrias);
+    fecharAbasmaiores(abamaiorshikigamis);
 })
 botaoabadescricao.addEventListener('click', function() {
     fecharAbasmaiores(abamaiordescricao);
