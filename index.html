@@ -6,6 +6,7 @@
     <title>Design de Ficha</title>
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="/css/barrinhas.css">
 </head>
 <body>
     <main>
@@ -197,14 +198,146 @@
             <div class="abas abaperfil">
                 <p>Descrição do Personagem</p>
             </div>
-            <div class="abas abavida">
-                <p>Administração de Vida</p>
+            <div class="abas abavida barrinhasconfig">
+                <div>
+                    <p id="abavidatitle">Administração de Vida</p>
+                    <div id="admbarrinhas1">
+                        <div class="caixa">
+                            <p class="label">Vida Atual</p>
+                            <p class="vidaatual vidanumero">100</p>
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Vida Máxima</p>
+                            <p class="vidaatual vidanumero">100</p>
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Vida Temporária</p>
+                            <input type="number" name="vidatemp" id="ividatemp">
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div id="admbarrinhas2">
+                        <div class="colunavida">
+                            <div class="caixa">
+                                <p class="label">Cura</p>
+                                <input type="number" name="vidacura" id="ividacura" value="0">
+                            </div>
+                            <div class="caixa">
+                                <p class="label">Dano</p>
+                                <input type="number" name="vidadano" id="ividadano" value="0">
+                            </div>
+                        </div>
+                        <div class="caixa">
+                            <div id="maisvida" class="mudarvida"><i class="fa-sharp fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                            <div id="menosvida" class="mudarvida"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></div>
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div id="admbarrinhas3">
+                        <div class="caixa">
+                            <p class="label">Modificador de Vida</p>
+                            <input type="number" name="vidatemp" id="ividamod">
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Substituir Vida Máxima</p>
+                            <input type="number" name="vidatemp" id="ividaoverride">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="abas abape">
-                <p>Administração de PE</p>
+            <div class="abas abape barrinhasconfig">
+                <div>
+                    <p id="abavidatitle">Administração de Energia</p>
+                    <div id="admbarrinhas1">
+                        <div class="caixa">
+                            <p class="label">Vida Atual</p>
+                            <p class="vidaatual vidanumero">100</p>
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Vida Máxima</p>
+                            <p class="vidaatual vidanumero">100</p>
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Vida Temporária</p>
+                            <input type="number" name="vidatemp" id="ividatemp">
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div id="admbarrinhas2">
+                        <div class="colunavida">
+                            <div class="caixa">
+                                <p class="label">Cura</p>
+                                <input type="number" name="vidacura" id="ividacura" value="0">
+                            </div>
+                            <div class="caixa">
+                                <p class="label">Dano</p>
+                                <input type="number" name="vidadano" id="ividadano" value="0">
+                            </div>
+                        </div>
+                        <div class="caixa">
+                            <div id="maisvida" class="mudarvida"><i class="fa-sharp fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                            <div id="menosvida" class="mudarvida"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></div>
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div id="admbarrinhas3">
+                        <div class="caixa">
+                            <p class="label">Modificador de Vida</p>
+                            <input type="number" name="vidatemp" id="ividamod">
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Substituir Vida Máxima</p>
+                            <input type="number" name="vidatemp" id="ividaoverride">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="abas abaalma">
-                <p>Administração de Alma</p>
+            <div class="abas abaalma barrinhasconfig">
+                <div>
+                    <p id="abavidatitle">Administração de Alma</p>
+                    <div id="admbarrinhas1">
+                        <div class="caixa">
+                            <p class="label">Vida Atual</p>
+                            <p class="vidaatual vidanumero">100</p>
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Vida Máxima</p>
+                            <p class="vidaatual vidanumero">100</p>
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Vida Temporária</p>
+                            <input type="number" name="vidatemp" id="ividatemp">
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div id="admbarrinhas2">
+                        <div class="colunavida">
+                            <div class="caixa">
+                                <p class="label">Cura</p>
+                                <input type="number" name="vidacura" id="ividacura" value="0">
+                            </div>
+                            <div class="caixa">
+                                <p class="label">Dano</p>
+                                <input type="number" name="vidadano" id="ividadano" value="0">
+                            </div>
+                        </div>
+                        <div class="caixa">
+                            <div id="maisvida" class="mudarvida"><i class="fa-sharp fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                            <div id="menosvida" class="mudarvida"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></div>
+                        </div>
+                    </div>
+                    <div class="borda"></div>
+                    <div id="admbarrinhas3">
+                        <div class="caixa">
+                            <p class="label">Modificador de Alma</p>
+                            <input type="number" name="almatemp" id="ialmamod">
+                        </div>
+                        <div class="caixa">
+                            <p class="label">Substituir Alma Máxima</p>
+                            <input type="number" name="almatemp" id="ialmaoverride">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="abas abamaestria">
                 <p>Descrição de Maestria</p>

@@ -34,7 +34,6 @@ div.botao {
     background-color: black;
     border-radius: 50%;
     margin-left: 2vw;
-
 }
 
 div.dados {
@@ -450,6 +449,11 @@ div.abas {
     z-index: 998;
     border-left: 1px solid black;
 }
+
+
+
+
+
 
 div.abamenu {
     display: none;

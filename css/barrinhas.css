@@ -1,0 +1,110 @@
+div.barrinhasconfig input {
+    height: 8vw;
+    width: 8vw;
+    text-align: center;
+}
+
+div.barrinhasconfig input::-webkit-inner-spin-button,
+div.barrinhasconfig input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+
+div.borda {
+    margin: auto;
+    background-image: linear-gradient(to right, transparent, black, black,black, transparent);
+    height: 1px;
+    width: 90%;
+}
+
+p#abavidatitle {
+    margin-top: 10px;
+    text-indent: 10px;
+    font-size: 20px;
+}
+
+div#admbarrinhas1 {
+    margin-top: 20px;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.barrinhasconfig div.caixa {
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+p.vidanumero {
+    font-size: 25px;
+}
+
+div#admbarrinhas2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.colunavida {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 30%;
+}
+
+div.colunavida p.label {
+    font-size: 2.5vw;
+} 
+
+div#admbarrinhas2 > div.colunavida > div.caixa {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: auto;
+    padding: 5px;
+}
+
+div#admbarrinhas2 > div.caixa {
+    height: 100%;
+    width: 30%;
+    gap: 5vw;
+}
+
+div.mudarvida {
+    background-color: black;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+}
+
+div.colunavida > div.caixa > input {
+    height: auto;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 6vw;
+}
+
+div.mudarvida > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    width: 6vh;
+}
+
+div#admbarrinhas3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
